@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nos Marques - Froid Innovation">
+    <title>Nos Marques - Froid Innovation</title>
+
+    <!-- Balise pour la favicon -->
+    <link rel="icon" href="Favicon/favicon-16x16.png" type="image/x-icon">
+    <!-- Alternative format pour une favicon en PNG -->
+    <!-- <link rel="icon" href="https://votre-domaine.com/path/to/logo.png" type="image/png"> -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <style>
+        /* Styles principaux */
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            background-image: url(header-bg.jpg);
+            background-size: cover;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .banner {
+            padding: 10px 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .company-name {
+            color: #FF4500;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .tagline {
+            color: #1E90FF;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+
+        .navbar {
+            background-color: #1E90FF;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            padding: 14px 20px; /* Ajustement de l'espacement entre les liens */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Grille de marques */
+        .brand-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 marques par ligne */
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .brand-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .brand-logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .brand-description {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .brand-button {
+            display: inline-block;
+            background-color: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .brand-button:hover {
+            background-color: #e63900;
+        }
+
+        footer {
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .quote-banner {
+                margin-top: 10px;
+                justify-content: center;
+            }
+
+            .logo {
+                margin-right: 0;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .brand-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .brand-grid {
+                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .brand-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 marques par ligne pour les tablettes */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <h1 class="company-name">Froid Innovation</h1>
+            <p>Nos Marques Partenaires</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Page Accueil.html">Accueil</a></li>
+                <li><a href="Page Accueil.html">Services</a></li>
+                <li><a href="#contact">Nous Contacter</a></li>
+                <li><a href="#brands">Nos Marques</a></li>
+                <li><a href="Page demander un devis.html">Demander un devis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="brands">
+        <div class="brand-container">
+            <div class="brand-card">
+                <img src="Logo marques/daikin-logo.svg" alt="Logo de DAIKIN" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">DAIKIN est un leader mondial en matière de solutions de chauffage et de climatisation efficaces et durables.</p>
+                <a href="https://www.daikin.fr" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="Logo marques/JCI_BIG.svg" alt="Logo de JOHNSON CONTROLS" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">HK Réfrigération propose des équipements de réfrigération innovants et performants pour les professionnels.</p>
+                <a href="https://www.hk-refrigeration.fr" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="Logo marques/friga-bohn.svg" alt="Logo de FRIGA-BOHN" class="brand-logo" width="150" height="auto" >
+                <p class="brand-description">FRIGA-BOHN est un acteur majeur dans les solutions de réfrigération industrielle et commerciale.</p>
+                <a href="https://friga-bohn.lennoxemea.com/fr/" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="Logo marques/lennox.svg" alt="Logo de LENNOX" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">Description de la première marque.</p>
+                <a href="https://www.marque1.com" class="brand-button" target="_blank"rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="Logo marques/logo atlantic fujitsu.svg" alt="Logo de ATLANTIC BY FUJITSU" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">Description de la deuxième marque.</p>
+                <a href="https://www.atlantic.fr/Climatiser-le-logement/Climatisation-reversible-pour-plusieurs-pieces" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="Logo marques/LOGO_toshiba.jpg" alt="Logo de TOSHIBA" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">Description de la troisième marque.</p>
+                <a href="https://www.marque3.com" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="logo4.svg" alt="Logo de MARQUE 4" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">Description de la quatrième marque.</p>
+                <a href="https://www.marque4.com" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="logo5.svg" alt="Logo de MARQUE 5" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">Description de la cinquième marque.</p>
+                <a href="https://www.marque5.com" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+
+            <div class="brand-card">
+                <img src="logo6.svg" alt="Logo de MARQUE 6" class="brand-logo" width="150" height="auto">
+                <p class="brand-description">Description de la sixième marque.</p>
+                <a href="https://www.marque6.com" class="brand-button" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Nous contacter</h2>
+        <p>Adresse du siège : 6 Bis Rue François Vittori, 20600 Bastia</p>
+        <p>Téléphone : 06 27 87 44 89</p>
+        <p>Email : contact@froid-inno.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Froid Innovation. Tous droits réservés.</p>
+        <a href="/politique-confidentialite.html" style="color: white;">Politique de confidentialité</a> |
+        <a href="/mentions-legales.html" style="color: white;">Mentions légales</a>
+    </footer>
+
+</body>
+
+</html>
+

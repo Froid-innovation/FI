@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Service de dépannage rapide et efficace par Froid Innovation.">
+    <title>Service de Dépannage - Froid Innovation</title>
+
+    <link rel="icon" href="https://votre-domaine.com/path/to/logo.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .company-name {
+            color: #FF4500;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .tagline {
+            color: #1E90FF;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .quote-banner {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .quote-button {
+            background-color: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: #1E90FF;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            padding: 14px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .depannage {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .depannage h2 {
+            color: #1E90FF;
+            margin-bottom: 20px;
+        }
+
+        .depannage h3 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .depannage .service {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .depannage .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .depannage .service p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .learn-more-button {
+            display: inline-block;
+            background-color: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .learn-more-button:hover {
+            background-color: #e63900;
+        }
+
+        footer {
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .quote-banner {
+                margin-top: 10px;
+                justify-content: center;
+            }
+
+            .logo {
+                margin-right: 0;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .depannage .service {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo-title-container">
+                <img src="logo.svg" alt="Logo de Froid Innovation" class="logo">
+                <h1 class="company-name">Froid Innovation</h1>
+            </div>
+            <p class="tagline">Dépannage rapide pour votre confort</p>
+        </div>
+        <div class="quote-banner">
+            <a href="#contact" class="quote-button">Demander un devis</a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="file:///C:/Users/nassi/OneDrive/Documents/Froid%20Innovation/Page%20Accueil.html">Accueil</a></li>
+                <li><a href="file:///C:/Users/nassi/OneDrive/Documents/Froid%20Innovation/Page%20Accueil.html">Services</a></li>
+                <li><a href="file:///C:/Users/nassi/OneDrive/Documents/Froid%20Innovation/Page%20demander%20un%20devis.html">Demander un devis</a></li>
+                <li><a href="file:///C:/Users/nassi/OneDrive/Documents/Froid%20Innovation/Page%20nos%20marques.html">Nos marques</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="depannage">
+        <h2>Nos Services de Dépannage</h2>
+
+        <div class="service">
+            <h3>Dépannage de systèmes de climatisation</h3>
+            <img src="depannage2.jpg" alt="Dépannage de systèmes de climatisation">
+            <p>Nos experts réparent vos systèmes de climatisation pour vous assurer un confort optimal en toutes saisons.</p>
+            <a href="#contact" class="learn-more-button">Demander un devis</a>
+        </div>
+
+        <div class="service">
+            <h3>Dépannage de chambres froides</h3>
+            <img src="depannage3.jpg" alt="Dépannage de chambres froides">
+            <p>Nous intervenons rapidement pour réparer vos chambres froides et préserver vos produits sensibles.</p>
+            <a href="#contact" class="learn-more-button">Demander un devis</a>
+        </div>
+
+        <div class="service">
+            <h3>Contrats de dépannage prioritaires</h3>
+            <img src="depannage4.jpg" alt="Contrats de dépannage prioritaires">
+            <p>Accédez à nos services de dépannage prioritaires pour minimiser les temps d'arrêt de vos installations.</p>
+            <a href="#contact" class="learn-more-button">Demander un devis</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Nous Contacter</h2>
+        <p>Adresse du siège : 6 Bis Rue François Vittori, 20600 Bastia</p>
+        <p>Téléphone : 06 27 87 44 89</p>
+        <p>Email : contact@froid-innovation.fr</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Froid Innovation. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Service d'installation par Froid Innovation.">
+    <title>Service d'installation - Froid Innovation</title>
+
+    <link rel="icon" href="https://votre-domaine.com/path/to/logo.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .company-name {
+            color: #FF4500;
+            font-size: 1.5rem;
+            margin: 0;
+            text-align: left;
+        }
+
+        .quote-banner {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+
+        .quote-button {
+            background-color: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: #1E90FF;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            padding: 14px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .installation-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .installation-content h2 {
+            color: #1E90FF;
+            margin-bottom: 20px;
+        }
+
+        .installation-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+        }
+
+        .installation-section img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 20px;
+        }
+
+        .installation-section .text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+            color: #00796b;
+        }
+
+        .installation-section:nth-child(odd) .text {
+            text-align: center;
+        }
+
+        .installation-section:nth-child(even) .text {
+            text-align: left;
+        }
+
+        .installation-section h3 {
+            color: #004d40;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .installation-section p {
+            color: #00796b;
+        }
+
+        .installation-section a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #FF4500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .learn-more-button {
+            margin-top: 15px;
+            display: inline-block;
+            background-color: #FF4500;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .installation-section {
+                flex-direction: column;
+            }
+
+            .installation-section:nth-child(even) .text {
+                text-align: center;
+            }
+        }
+
+        .contact {
+             text-align: center;
+             padding: 40px 20px;
+
+        }
+
+        footer {
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo-title-container">
+                <img src="Images/Froid innovation rouge orangé.png" alt="Logo de Froid Innovation" class="logo">
+                <h1 class="company-name">Froid Innovation</h1>
+            </div>
+        </div>
+        <div class="quote-banner">
+            <a href="Page demander un devis.html" class="quote-button">Demander un devis</a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Page Accueil.html">Accueil</a></li>
+                <li><a href="Page Accueil.html">Services</a></li>
+                <li><a href="Page demander un devis.html">Demander un devis</a></li>
+                <li><a href="">Nos marques</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="installation-content">
+        <h2>Service d'installation</h2>
+        <p>Chez Froid Innovation, nous vous proposons des services d'installation de haute qualité pour vos systèmes de climatisation, pompes à chaleur, et chambres froides. Nous nous engageons à vous offrir un service professionnel et efficace, adapté à vos besoins spécifiques.</p>
+        
+       
+        <div class="installation-section">
+            <img src="Images/PAC.webp" alt="Installation d'une pompe à chaleur">
+            <div class="text">
+                <h3>Installation de pompes à chaleur</h3>
+                <p>Nos experts installent des pompes à chaleur performantes et durables, adaptées à votre habitation ou à vos locaux professionnels.</p>
+                <a href="page-pompe-a-chaleur.html" class="learn-more-button">En savoir plus</a>
+            </div>
+        </div>
+
+   
+        <div class="installation-section">
+            <div class="text">
+                <h3>Installation de systèmes de climatisation</h3>
+                <p>Nous installons des systèmes de climatisation innovants pour garantir votre confort tout au long de l'année.</p>
+                <a href="page-pompe-a-chaleur.html" class="learn-more-button">En savoir plus</a>
+            </div>
+            <img src="Images/climatisations.jpeg" alt="Installation de climatisation">
+        </div>
+
+       
+        <div class="installation-section">
+            <img src="Images/chambre froide.webp" alt="Installation d'une chambre froide">
+            <div class="text">
+                <h3>Installation de chambres froides</h3>
+                <p>Nous réalisons l'installation de chambres froides sur mesure, répondant aux normes les plus strictes.</p>
+                <a href="page-installation.html" class="learn-more-button">En savoir plus</a>
+            </div>
+        </div>
+
+        <div class="installation-section">
+            <div class="text">
+                <h3>installation de vitrines réfrigérées</h3>
+                <p>Nous réalisons l'installation de vos vitrines réfrigérées sur mesure, répondant à vos attentes.</p>
+                <a href="page-installation.html" class="learn-more-button">En savoir plus</a>
+            </div>
+            <img src="Images/vitrine.webp" alt="Installation de vitrines réfrigérées">
+        </div>
+      
+        <div class="installation-section">
+            <img src="installation4.jpg" alt="Installation sur mesure">
+            <div class="text">
+                <h3>Installations frigorifiques sur mesure</h3>
+                <p>Chaque projet est unique, c'est pourquoi nous proposons des solutions d'installation personnalisées pour répondre à vos besoins spécifiques.</p>
+                <a href="page-sur-mesure.html" class="learn-more-button">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Nous contacter</h2>
+        <p>Adresse du siège : 6 Bis Rue François Vittori, 20600 Bastia</p>
+        <p>Téléphone : 06 27 87 44 89</p>
+        <p>Email : contact@froid-innovation.fr</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Froid Innovation. Tous droits réservés.</p>
+        <a href="/politique-confidentialite.html" style="color: white;">Politique de confidentialité</a> |
+        <a href="/mentions-legales.html" style="color: white;">Mentions légales</a>
+    </footer>
+
+</body>
+
+</html>
